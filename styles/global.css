@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-syne: 'Syne', system-ui, sans-serif;
+  --font-mont: 'Montserrat', system-ui, sans-serif;
+
+  --font-medium: 500;
+  --font-semibold: 700;
+  --font-bold: 900;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 2.5rem;
+  --text-xl: 4rem;
+
+  --title-primary: var(--font-bold) var(--text-xl) / 1.25 var(--font-syne);
+  --title-secondary: var(--font-bold) var(--text-lg) / 1.2 var(--font-syne);
+
+  --button-label: var(--font-medium) var(--text-base) / 1.5 var(--font-mont);
+  --span: var(--font-medium) var(--text-sm) / 1.5 var(--font-mont);
+
+  --yellow: #ffcd1e;
+  --blue: #06b6d4;
+  --cyan: #67e8f9;
+  --fuchsia: #db2777;
+  --pink: #f472b6;
+  --green: #16a34a;
+
+  --bg-primary: #fafafa;
+  --text-primary: #000;
+  --highlight: #000;
+}
+
+html,
+button {
+  font: var(--button-label);
+}
+
+h1 {
+  font: var(--title-primary);
+}
+
+h2 {
+  font: var(--title-secondary);
+}
