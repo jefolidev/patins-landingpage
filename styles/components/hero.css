@@ -1,0 +1,238 @@
+.hero-wrapper {
+  max-width: 80rem;
+  width: 100%;
+
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 2rem;
+
+  & h1 {
+    max-width: 40rem;
+  }
+
+  h1 div {
+    display: inline-block;
+    overflow: hidden;
+
+    height: 5rem;
+    width: min-content;
+
+    vertical-align: bottom;
+  }
+
+  h1 span {
+    display: block;
+
+    animation: slideUp 6s infinite ease;
+  }
+
+  h1 span:nth-child(1),
+  span:nth-child(4) {
+    color: var(--blue);
+  }
+
+  h1 span:nth-child(2) {
+    color: var(--fuchsia);
+  }
+
+  h1 span:nth-child(3) {
+    color: var(--green);
+  }
+}
+
+.buttons-wrapper {
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .btn-primary {
+    border: none;
+    border-radius: 5rem;
+
+    padding: 1.5rem 3rem;
+
+    background-color: var(--yellow);
+  }
+
+  & button {
+    box-shadow:
+      0px 57px 16px 0px rgba(0, 0, 0, 0),
+      0px 36px 15px 0px rgba(0, 0, 0, 0.01),
+      0px 20px 12px 0px rgba(0, 0, 0, 0.05),
+      0px 9px 9px 0px rgba(0, 0, 0, 0.09),
+      0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  & .btn-primary:hover {
+    transform: scale(1.05);
+  }
+
+  & .btn-secondary-wrapper {
+    display: flex;
+    gap: 2rem;
+
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  & .btn-secondary-wrapper:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-secondary {
+    border: none;
+    border-radius: 100%;
+
+    display: relative;
+    width: 5rem;
+  }
+
+  & button + p {
+    margin-block: auto;
+  }
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.blue-circle {
+  animation-name: blue-ball;
+  animation-duration: 1.4s;
+}
+
+.patins {
+  position: absolute;
+  left: 0;
+
+  width: 32rem;
+  height: 30rem;
+
+  animation-name: patins;
+  animation-duration: 1s;
+}
+
+.stars-1,
+.stars-2 {
+  position: absolute;
+  animation-name: stars;
+  animation-duration: 1.2s;
+}
+
+.stars-1 {
+  width: 5.5rem;
+  height: 4.5rem;
+
+  top: 9rem;
+  left: 0;
+}
+
+.stars-2 {
+  width: 2.5rem;
+  height: 3.75rem;
+
+  top: 17rem;
+  right: 3rem;
+}
+
+@keyframes slideUp {
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+
+  23% {
+    transform: translateY(calc(-5rem - 15px));
+  }
+  25% {
+    transform: translateY(calc(-5rem + 15px));
+  }
+  27% {
+    transform: translateY(calc(-5rem - 5px));
+  }
+  29% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+
+  33%,
+  55% {
+    transform: translateY(-5rem);
+  }
+
+  56% {
+    transform: translateY(calc(-10rem - 15px));
+  }
+
+  58% {
+    transform: translateY(calc(-10rem + 10px));
+  }
+  60% {
+    transform: translateY(calc(-10rem - 5px));
+  }
+  62% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+
+  66%,
+  88% {
+    transform: translateY(-10rem);
+  }
+
+  89% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+
+  91% {
+    transform: translateY(calc(-15rem + 10px));
+  }
+  93% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+  95% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+
+  100% {
+    transform: translateY(-15rem);
+  }
+}
+
+@keyframes blue-ball {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes patins {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes stars {
+  0% {
+    transform: translateX(80rem);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,6 +1,29 @@
 .flex {
   display: flex;
 }
+.flex-col {
+  flex-direction: column;
+}
+
+.py-lg {
+  padding-block: 2rem;
+}
+
+.py-sm {
+  padding-block: 0.5rem;
+}
+
+.py-xl {
+  padding-block: 2.5rem;
+}
+
+.px-lg {
+  padding-inline: 2rem;
+}
+
+.justify-start {
+  justify-content: start;
+}
 
 .justify-center {
   justify-content: center;
@@ -14,7 +37,11 @@
   justify-content: space-evenly;
 }
 
-.align-center {
+.items-start {
+  align-items: start;
+}
+
+.items-center {
   align-items: center;
 }
 
@@ -28,9 +55,4 @@
 
 .gap-1\.5 {
   gap: 1.5rem;
-}
-
-.logo {
-  transform: rotate(90deg);
-  transition: transform 1s ease-in;
 }
