@@ -38,7 +38,7 @@
 
   @media (width < 1024px) {
     --text-lg: 1rem;
-    --text-xl: 2.5rem;
+    --text-xl: 2rem;
   }
 }
 
