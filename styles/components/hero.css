@@ -132,17 +132,20 @@
   display: none;
 
   & .patins {
-    width: 15rem;
-    height: 14rem;
+    width: 100%;
+    max-width: 32.5rem;
+    height: 30.5rem;
 
     margin-inline: auto;
 
-    @media (width < 1024px) {
-      width: 20rem;
-      height: 19rem;
+    @media (width > 400px) and (width < 728px) {
+      height: 25rem;
+    }
+
+    @media (width > 330px) and (width < 400px) {
+      height: 18rem;
     }
   }
-
   @media (width < 1024px) {
     display: initial;
   }
