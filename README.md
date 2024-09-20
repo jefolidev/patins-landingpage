@@ -26,6 +26,8 @@ Nesta landing page é utilizado conceitos importantes e mais avançados de anima
 
 ### Desktop
 
+#### ( A imagem está distorcida devido ao efeito de scroll, o site está normal! )
+
 <img src="public/full-page-desktop.png">
 
 ## ⚙️ Funcionalidades
