@@ -197,9 +197,14 @@
   top: 9rem;
   left: 0;
 
-  @media (width < 1024px) {
-    width: 4rem;
+  @media (width > 400px) and (width < 728px) {
+    top: 14rem;
+    left: 4rem;
+  }
 
+  @media (width > 330px) and (width < 400px) {
+    height: 3rem;
+    
     top: 12rem;
     left: 2rem;
   }
@@ -212,11 +217,16 @@
   top: 17rem;
   right: 0;
 
-  @media (width < 1024px) {
-    width: 2rem;
+  @media (width > 400px) and (width < 728px) {
+    top: 22rem;
+    right: 6rem;
+  }
 
-    top: 16rem;
-    right: 2rem;
+  @media (width > 330px) and (width < 400px) {
+    height: 3rem;
+    
+    top: 19rem;
+    right: 1rem;
   }
 }
 
