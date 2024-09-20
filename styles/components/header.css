@@ -2,14 +2,6 @@ header {
   width: 100%;
   max-width: 80rem;
   margin-inline: auto;
-
-  img {
-    transition: transform 500ms;
-  }
-
-  .logo:hover {
-    transform: rotate(90deg);
-  }
 }
 
 .shopping-bag[src*='shopping'] {
@@ -43,4 +35,12 @@ header {
       }
     }
   }
+}
+
+.logo {
+  transition: transform 500ms;
+}
+
+.logo:hover {
+  transform: rotate(90deg);
 }
